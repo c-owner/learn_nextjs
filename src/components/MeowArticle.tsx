@@ -3,7 +3,7 @@ import styles from './MeowArticle.module.css';
 import {useEffect, useState} from "react";
 
 export default function MeowArticle() {
-    const [text, setText] = useState(''); // [상태, 상태를 바꿀 수 있는 함수
+    const [text, setText] = useState('데이터 준비중...'); // [상태, 상태를 바꿀 수 있는 함수
 
     // useEffect를 사용하기 때문에 비동기 Promise 처리로 진행
     useEffect(() => {
