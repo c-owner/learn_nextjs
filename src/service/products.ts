@@ -1,7 +1,7 @@
 export function getProducts() {
-    return ['shirt', 'pants', 'shoes', 'bags'];
+    return ['shirt', 'pants', 'shoes', 'bags', 'dress'];
 }
 
 export function getProduct(id: string) {
-    return 'shirt';
+    return id;
 }
