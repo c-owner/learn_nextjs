@@ -8,7 +8,7 @@ export default function Home() {
 
     return (
         <>
-            <h1>홈페이지!!</h1>
+            <h1>홈페이지!! v3</h1>
             <Counter/>
             {/* 이미지에서 외부 경로를 사용할 땐 width와 height를 사용하여야 한다. */}
             <Image src="https://images.unsplash.com/photo-1441986300917-64674bd600d8"
