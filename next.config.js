@@ -12,6 +12,7 @@ const nextConfig = {
             }
         ]
     },
+    // 페이지가 경로가 바뀌면서 실 사용자 및 검색엔진 등 혼란스럽지 않도록 이동시킨다.
     async redirects() {
         return [
             {
@@ -26,6 +27,20 @@ const nextConfig = {
                 permanent: false,
             }
         ]
+    },
+    // 복잡한 URL을 다른것으로 대체하거나 덮어씌우는 용도 및 프로젝트 구조 노출을 방지함
+    async rewrites() {
+        return [
+            {
+                source: '/main',
+                destination: '/',
+            },
+            {
+                source: '/items/:slug',
+                destination: '/products/:slug',
+            }
+        ]
+
     }
 }
 
