@@ -13,7 +13,8 @@ export default async function ProductsPage() {
     return (
         <>
             <h1>제품 소개 페이지</h1>
-            <Image src={clothesImage} alt={"clothes"}/>
+            {/* priority 속성은 Next.js에서 우선순위로 보여줄 이미지로 지정해줄 Property이다. */}
+            <Image src={clothesImage} alt={"clothes"} priority />
             <ul>
                 {products.map(({id, name}, index) => (
                     <li key={index}>
